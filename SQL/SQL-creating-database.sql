@@ -9,24 +9,24 @@ USE credit_card_classification;
 
 DROP TABLE IF EXISTS credit_card_data;
 CREATE TABLE `credit_card_data` (
-  `Customer_Number` INT NOT NULL AUTO_INCREMENT,
-  `Offer_Accepted` ENUM('Yes','No') DEFAULT NULL,
-  `Reward` TEXT,
-  `Mailer_Type` TEXT DEFAULT NULL,
-  `Income_Level` TEXT DEFAULT NULL,
-  `#_Bank_Accounts_Open` INT DEFAULT NULL,
-  `Overdraft_Protection` ENUM('Yes','No') DEFAULT NULL,
-  `Credit_Rating` TEXT DEFAULT NULL,
-  `#_Credit_Cards_Held` INT DEFAULT NULL,
-  `#_Homes_Owned` INT DEFAULT NULL,
-  `Household_Size` INT DEFAULT NULL,
-  `Own_Your_Own_Home` TEXT DEFAULT NULL,
-  `Average_Balance` FLOAT DEFAULT NULL,
-  `Q1_Balance` FLOAT DEFAULT NULL,
-  `Q2_Balance` FLOAT DEFAULT NULL,
-  `Q3_Balance` FLOAT DEFAULT NULL,
-  `Q4_Balance` FLOAT DEFAULT NULL,
-  PRIMARY KEY (`Customer_Number`)
+  `customer_number` INT NOT NULL AUTO_INCREMENT,
+  `offer_accepted` ENUM('Yes','No') DEFAULT NULL,
+  `reward` TEXT,
+  `mailer_type` TEXT DEFAULT NULL,
+  `income_level` TEXT DEFAULT NULL,
+  `bank_accounts_open` INT DEFAULT NULL,
+  `overdraft_protection` ENUM('Yes','No') DEFAULT NULL,
+  `credit_rating` TEXT DEFAULT NULL,
+  `credit_cards_held` INT DEFAULT NULL,
+  `homes_owned` INT DEFAULT NULL,
+  `household_size` INT DEFAULT NULL,
+  `own_your_own_home` TEXT DEFAULT NULL,
+  `average_balance` FLOAT DEFAULT NULL,
+  `q1_balance` FLOAT DEFAULT NULL,
+  `q2_balance` FLOAT DEFAULT NULL,
+  `q3_balance` FLOAT DEFAULT NULL,
+  `q4_balance` FLOAT DEFAULT NULL,
+  PRIMARY KEY (`customer_number`)
 );
 
 SELECT * FROM credit_card_data;
