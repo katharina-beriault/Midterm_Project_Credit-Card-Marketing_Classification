@@ -1,4 +1,5 @@
-# Midterm Project Ironhack | SQL, Logistic Regression, Tableau
+# Midterm Project 
+## Credit Card Marketing | SQL, Logistic Regression, Tableau
 
 ![photo](link)
 
