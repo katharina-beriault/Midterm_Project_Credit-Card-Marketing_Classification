@@ -1,4 +1,4 @@
-# Midterm Project 
+# Midterm Project (WORK IN PROGRESS!)
 ## Credit Card Marketing | SQL, Logistic Regression, Tableau
 
 ![photo](link)
