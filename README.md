@@ -16,19 +16,30 @@
 
 ### Project data
 
-[**creditcardmarketing.csv**](link)
+[**creditcardmarketing.csv**](https://github.com/katharina-beriault/Midterm_Project_Credit-Card-Marketing_Classification/blob/main/Data/creditcardmarketing.csv)
 
-> 17976 rows, xx columns
+> 18000 rows and 17 columns
 
 The data set provides information about
 
-    |   |   |
-    |---|---|
-    |  Customer Number | Household Size   |
-    | Owns a Home  | Number of Open Bank Accounts  |
-    | Number of Credit Cards Held  | Credit Rating  |
-    | Average Balance  | Balance Q1-Q4  |
-    |||
+Columns |
+--- |
+| Customer Number | 
+| Offer Accepted |
+| Reward |
+| Mailer Type |
+| Income Level |
+| Household Size   
+| Owns a Home  | 
+| Number of Homes Owned |
+| Overdraft Protection |
+| Number of Bank Accounts Owned |
+| Number of Credit Cards Held  | 
+| Credit Rating  |
+| Average Balance  | 
+| Balance Q1-Q4  |
+
+
 
 ---------------------------------------------------------------------------------------------------------
 
@@ -52,18 +63,18 @@ The goal of this project is to
 
 3. **Cleaing the data with Python**
     - Connecting the SQL-database to Python
-    - Pull the data as a dataframe in python
-    - Perform data cleaning and data wrangling in Python
+    - Pulling the data as a dataframe in python
+    - Performing data cleaning and data wrangling in Python
   
 3.  **Perform Exploratory Data Analysis with Python** 
-    - Fit the model
-    - Check accuracy of the model (exploring *Variance vs. Bias* tradeoff)
-    - Iterate on the model to get more optimized results.
+    - Fitting the model
+    - Checking accuracy of the model (exploring *Variance vs. Bias* tradeoff)
+    - Iterating on the model to get more optimized results
   
 4. **Presenting the results with Tableau** 
-    - Produce documentation to make the project accessible
-    - Build engaging presentations
-    - Include storytelling to your presentation!
+    - Producing documentation to make the project accessible
+    - Building engaging presentations
+    - Including storytelling to my presentation
 
 
 ---------------------------------------------------------------------------------------------------------
@@ -78,3 +89,11 @@ The goal of this project is to
 
 
 ---------------------------------------------------------------------------------------------------------
+### Modules used for Python analysis
+
+[pandas](https://pandas.pydata.org/)<br>
+[numpy](https://numpy.org/doc/)<br>
+[matplotlib.pyplot](https://matplotlib.org/3.1.1/contents.html)<br>
+[seaborn](https://seaborn.pydata.org/)<br>
+[sklearn](https://scikit-learn.org/stable/index.html)<br>
+[statsmodels](https://www.statsmodels.org/stable/index.html)
