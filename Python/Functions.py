@@ -20,6 +20,49 @@ from sklearn.metrics import confusion_matrix
 
 import scikitplot as skplt
 
+# function which sorts columns into list depending on a self chosen threshold: discrete VS contiuous variables
+# needs to be improved --> how to save lists as a variable which can be saved outside of the function?
+def continuous_discrete(df, threshold):
+    
+    lst_discrete = []
+    lst_continuous = []
+        
+    for col in df.columns:
+
+        if df[col].nunique() <= threshold:
+            lst_discrete.append(col)
+        else:
+            lst_continuous.append(col)
+        
+    print('The following columns are discrete with a value count of equal or less than ', threshold, ': ', lst_discrete)
+    print('The following columns are continuous with a value count of more than', threshold, ': ',lst_continuous)
+    
+    return lst_discrete, lst_continuous
+
+# function to show countplot for discrete variables and histplot for continuous variables
+# needs to be improved --> subplots aren't shown next to each other yet!
+def showing_count_dist(df, discrete=[], continuous=[], skip_columns=[]):
+   
+    for col in df.columns:
+        if col not in skip_columns:
+            fig, axes = plt.subplots(1, 2, figsize=(15, 5))
+            # sns.set_style("darkgrid")
+
+            if col in discrete:
+                sns.countplot(df[col], ax=axes[0])
+            elif col in continuous:
+                sns.histplot(df[col], ax=axes[1])
+
+            plt.show()
+
+# function to show countplot with hue            
+def showing_count_hue(df, in_columns=[], skip_columns=[], target=''):
+    for col in df.columns:
+        if col in in_columns:
+            if col not in skip_columns:
+                sns.countplot(df[col], hue=target, data=df)
+                plt.show()
+                
 # function to clean headers (column names)
 def clean_headers(df):
     df.columns = df.columns.str.lower().str.replace(' ', '_').str.replace('#', 'number')
