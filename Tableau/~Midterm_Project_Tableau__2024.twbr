@@ -1,0 +1,3652 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20212.21.0712.0907                               -->
+<workbook source-build='2021.2.1 (20212.21.0712.0907)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Parameter Average Balance' datatype='real' name='[Parameter Average Balance]' param-domain-type='any' role='measure' type='quantitative' value='700.'>
+        <calculation class='tableau' formula='700.' />
+      </column>
+    </datasource>
+    <datasource caption='creditcardmarketing-bbm (creditcardmarketing)' inline='true' name='federated.0td3coj1ralyfw14bli0v0wkrks8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='creditcardmarketing' name='excel-direct.0h6dv7j01ilj6519ufi1w0zvpj10'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/katha/OneDrive/Dokumente/Ironhack/Course/Mid-Project-Ironhack/Data/creditcardmarketing.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0h6dv7j01ilj6519ufi1w0zvpj10' name='creditcardmarketing-bbm' table='[&apos;creditcardmarketing-bbm$&apos;]' type='table'>
+          <columns gridOrigin='A1:Q10001:no:A1:Q2147483647:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Customer Number' ordinal='0' />
+            <column datatype='string' name='Offer Accepted' ordinal='1' />
+            <column datatype='string' name='Reward' ordinal='2' />
+            <column datatype='string' name='Mailer Type' ordinal='3' />
+            <column datatype='string' name='Income Level' ordinal='4' />
+            <column datatype='integer' name='# Bank Accounts Open' ordinal='5' />
+            <column datatype='string' name='Overdraft Protection' ordinal='6' />
+            <column datatype='string' name='Credit Rating' ordinal='7' />
+            <column datatype='integer' name='# Credit Cards Held' ordinal='8' />
+            <column datatype='integer' name='# Homes Owned' ordinal='9' />
+            <column datatype='real' name='Household Size' ordinal='10' />
+            <column datatype='string' name='Own Your Home' ordinal='11' />
+            <column datatype='real' name='Average Balance' ordinal='12' />
+            <column datatype='integer' name='Q1 Balance' ordinal='13' />
+            <column datatype='integer' name='Q2 Balance' ordinal='14' />
+            <column datatype='integer' name='Q3 Balance' ordinal='15' />
+            <column datatype='integer' name='Q4 Balance' ordinal='16' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0h6dv7j01ilj6519ufi1w0zvpj10' name='creditcardmarketing-bbm' table='[&apos;creditcardmarketing-bbm$&apos;]' type='table'>
+          <columns gridOrigin='A1:Q10001:no:A1:Q2147483647:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Customer Number' ordinal='0' />
+            <column datatype='string' name='Offer Accepted' ordinal='1' />
+            <column datatype='string' name='Reward' ordinal='2' />
+            <column datatype='string' name='Mailer Type' ordinal='3' />
+            <column datatype='string' name='Income Level' ordinal='4' />
+            <column datatype='integer' name='# Bank Accounts Open' ordinal='5' />
+            <column datatype='string' name='Overdraft Protection' ordinal='6' />
+            <column datatype='string' name='Credit Rating' ordinal='7' />
+            <column datatype='integer' name='# Credit Cards Held' ordinal='8' />
+            <column datatype='integer' name='# Homes Owned' ordinal='9' />
+            <column datatype='real' name='Household Size' ordinal='10' />
+            <column datatype='string' name='Own Your Home' ordinal='11' />
+            <column datatype='real' name='Average Balance' ordinal='12' />
+            <column datatype='integer' name='Q1 Balance' ordinal='13' />
+            <column datatype='integer' name='Q2 Balance' ordinal='14' />
+            <column datatype='integer' name='Q3 Balance' ordinal='15' />
+            <column datatype='integer' name='Q4 Balance' ordinal='16' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[creditcardmarketing-bbm]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:Q10001:no:A1:Q2147483647:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Customer Number]</local-name>
+            <parent-name>[creditcardmarketing-bbm]</parent-name>
+            <remote-alias>Customer Number</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[creditcardmarketing-bbm_3F73EC98278C499386578E40CADACC9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Offer Accepted</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Offer Accepted]</local-name>
+            <parent-name>[creditcardmarketing-bbm]</parent-name>
+            <remote-alias>Offer Accepted</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[creditcardmarketing-bbm_3F73EC98278C499386578E40CADACC9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reward</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Reward]</local-name>
+            <parent-name>[creditcardmarketing-bbm]</parent-name>
+            <remote-alias>Reward</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[creditcardmarketing-bbm_3F73EC98278C499386578E40CADACC9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mailer Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Mailer Type]</local-name>
+            <parent-name>[creditcardmarketing-bbm]</parent-name>
+            <remote-alias>Mailer Type</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[creditcardmarketing-bbm_3F73EC98278C499386578E40CADACC9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Income Level</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Income Level]</local-name>
+            <parent-name>[creditcardmarketing-bbm]</parent-name>
+            <remote-alias>Income Level</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[creditcardmarketing-bbm_3F73EC98278C499386578E40CADACC9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name># Bank Accounts Open</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[# Bank Accounts Open]</local-name>
+            <parent-name>[creditcardmarketing-bbm]</parent-name>
+            <remote-alias># Bank Accounts Open</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[creditcardmarketing-bbm_3F73EC98278C499386578E40CADACC9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Overdraft Protection</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Overdraft Protection]</local-name>
+            <parent-name>[creditcardmarketing-bbm]</parent-name>
+            <remote-alias>Overdraft Protection</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[creditcardmarketing-bbm_3F73EC98278C499386578E40CADACC9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Credit Rating</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Credit Rating]</local-name>
+            <parent-name>[creditcardmarketing-bbm]</parent-name>
+            <remote-alias>Credit Rating</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[creditcardmarketing-bbm_3F73EC98278C499386578E40CADACC9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name># Credit Cards Held</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[# Credit Cards Held]</local-name>
+            <parent-name>[creditcardmarketing-bbm]</parent-name>
+            <remote-alias># Credit Cards Held</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[creditcardmarketing-bbm_3F73EC98278C499386578E40CADACC9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name># Homes Owned</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[# Homes Owned]</local-name>
+            <parent-name>[creditcardmarketing-bbm]</parent-name>
+            <remote-alias># Homes Owned</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[creditcardmarketing-bbm_3F73EC98278C499386578E40CADACC9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Household Size</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Household Size]</local-name>
+            <parent-name>[creditcardmarketing-bbm]</parent-name>
+            <remote-alias>Household Size</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[creditcardmarketing-bbm_3F73EC98278C499386578E40CADACC9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Own Your Home</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Own Your Home]</local-name>
+            <parent-name>[creditcardmarketing-bbm]</parent-name>
+            <remote-alias>Own Your Home</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[creditcardmarketing-bbm_3F73EC98278C499386578E40CADACC9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average Balance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Average Balance]</local-name>
+            <parent-name>[creditcardmarketing-bbm]</parent-name>
+            <remote-alias>Average Balance</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[creditcardmarketing-bbm_3F73EC98278C499386578E40CADACC9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Q1 Balance</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Q1 Balance]</local-name>
+            <parent-name>[creditcardmarketing-bbm]</parent-name>
+            <remote-alias>Q1 Balance</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[creditcardmarketing-bbm_3F73EC98278C499386578E40CADACC9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Q2 Balance</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Q2 Balance]</local-name>
+            <parent-name>[creditcardmarketing-bbm]</parent-name>
+            <remote-alias>Q2 Balance</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[creditcardmarketing-bbm_3F73EC98278C499386578E40CADACC9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Q3 Balance</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Q3 Balance]</local-name>
+            <parent-name>[creditcardmarketing-bbm]</parent-name>
+            <remote-alias>Q3 Balance</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[creditcardmarketing-bbm_3F73EC98278C499386578E40CADACC9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Q4 Balance</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Q4 Balance]</local-name>
+            <parent-name>[creditcardmarketing-bbm]</parent-name>
+            <remote-alias>Q4 Balance</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[creditcardmarketing-bbm_3F73EC98278C499386578E40CADACC9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[# Bank Accounts Open]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[# Credit Cards Held]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[# Homes Owned]' role='measure' type='quantitative' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q1 Balance:qk]&quot;' value='Q1' />
+          <alias key='&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q2 Balance:qk]&quot;' value='Q2' />
+          <alias key='&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q3 Balance:qk]&quot;' value='Q3' />
+          <alias key='&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q4 Balance:qk]&quot;' value='Q4' />
+          <alias key='&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Offer Accepted:qk]&quot;' value='Actual numbers' />
+          <alias key='&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[pcto:cnt:Offer Accepted:qk:1]&quot;' value='Percentage' />
+        </aliases>
+      </column>
+      <column aggregation='None' caption='Average Balance (Bin)' datatype='integer' name='[Average Balance (Partition)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Average Balance]' peg='0' size-parameter='[Parameters].[Parameter Average Balance]' />
+      </column>
+      <column datatype='real' name='[Average Balance]' role='measure' type='quantitative' />
+      <column caption='Categories Average Balance' datatype='string' name='[Calculation_461900448577961986]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Average Balance] &lt;= 700 THEN &apos;Category A&apos;&#13;&#10;ELSEIF [Average Balance] &gt; 700 AND [Average Balance] &lt;= 1400 THEN &apos;Category B&apos;&#13;&#10;ELSEIF [Average Balance] &gt; 1400 AND [Average Balance] &lt;= 1900 THEN &apos;Category C&apos;&#13;&#10;ELSEIF [Average Balance] &gt; 1900 AND [Average Balance] &lt;= 3366 THEN &apos;Category D&apos;&#13;&#10;END' />
+      </column>
+      <column datatype='integer' name='[Customer Number]' role='dimension' type='ordinal' />
+      <column datatype='real' name='[Household Size]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Offer Accepted]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Q1 Balance]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Q2 Balance]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Q3 Balance]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Q4 Balance]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='creditcardmarketing-bbm' datatype='table' name='[__tableau_internal_object_id__].[creditcardmarketing-bbm_3F73EC98278C499386578E40CADACC9B]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[creditcardmarketing-bbm_3F73EC98278C499386578E40CADACC9B]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:creditcardmarketing-bbm_3F73EC98278C499386578E40CADACC9B:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Household Size]' derivation='Attribute' name='[attr:Household Size:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Average Balance]' derivation='Avg' name='[avg:Average Balance:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Q1 Balance]' derivation='Avg' name='[avg:Q1 Balance:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Q2 Balance]' derivation='Avg' name='[avg:Q2 Balance:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Q3 Balance]' derivation='Avg' name='[avg:Q3 Balance:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Q4 Balance]' derivation='Avg' name='[avg:Q4 Balance:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Average Balance]' derivation='Count' name='[cnt:Average Balance:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Household Size]' derivation='Count' name='[cnt:Household Size:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Offer Accepted]' derivation='Count' name='[cnt:Offer Accepted:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Q1 Balance]' derivation='Count' name='[cnt:Q1 Balance:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Household Size]' derivation='CountD' name='[ctd:Household Size:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Average Balance]' derivation='Sum' name='[diff:sum:Average Balance:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Household Size]' derivation='None' name='[none:Household Size:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Offer Accepted]' derivation='None' name='[none:Offer Accepted:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Offer Accepted]' derivation='Count' name='[pcto:cnt:Offer Accepted:qk:1]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' ordering-type='Field' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[# Bank Accounts Open]' derivation='Sum' name='[sum:# Bank Accounts Open:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[# Credit Cards Held]' derivation='Sum' name='[sum:# Credit Cards Held:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[# Homes Owned]' derivation='Sum' name='[sum:# Homes Owned:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Average Balance]' derivation='Sum' name='[sum:Average Balance:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Household Size]' derivation='Sum' name='[sum:Household Size:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Q1 Balance]' derivation='Sum' name='[sum:Q1 Balance:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Q2 Balance]' derivation='Sum' name='[sum:Q2 Balance:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Q3 Balance]' derivation='Sum' name='[sum:Q3 Balance:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Q4 Balance]' derivation='Sum' name='[sum:Q4 Balance:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' palette='purple_10_0' type='palette'>
+            <map to='#7c4d79'>
+              <bucket>&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q4 Balance:qk]&quot;</bucket>
+            </map>
+            <map to='#8074a8'>
+              <bucket>&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Q1 Balance:qk]&quot;</bucket>
+            </map>
+            <map to='#8074a8'>
+              <bucket>&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[sum:Q1 Balance:qk]&quot;</bucket>
+            </map>
+            <map to='#a5729b'>
+              <bucket>&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q3 Balance:qk]&quot;</bucket>
+            </map>
+            <map to='#b57ea3'>
+              <bucket>&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[attr:Household Size:qk]&quot;</bucket>
+            </map>
+            <map to='#b57ea3'>
+              <bucket>&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Household Size:qk]&quot;</bucket>
+            </map>
+            <map to='#b57ea3'>
+              <bucket>&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[ctd:Household Size:qk]&quot;</bucket>
+            </map>
+            <map to='#b57ea3'>
+              <bucket>&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Household Size:qk]&quot;</bucket>
+            </map>
+            <map to='#b57ea3'>
+              <bucket>&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[sum:Household Size:qk]&quot;</bucket>
+            </map>
+            <map to='#c28caf'>
+              <bucket>&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Average Balance:qk]&quot;</bucket>
+            </map>
+            <map to='#c28caf'>
+              <bucket>&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Average Balance:qk]&quot;</bucket>
+            </map>
+            <map to='#c28caf'>
+              <bucket>&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[diff:sum:Average Balance:qk]&quot;</bucket>
+            </map>
+            <map to='#c28caf'>
+              <bucket>&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[sum:Average Balance:qk]&quot;</bucket>
+            </map>
+            <map to='#c46487'>
+              <bucket>&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[sum:Q3 Balance:qk]&quot;</bucket>
+            </map>
+            <map to='#c6c1f0'>
+              <bucket>&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[sum:Q2 Balance:qk]&quot;</bucket>
+            </map>
+            <map to='#cd9bbc'>
+              <bucket>&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[__tableau_internal_object_id__].[cnt:creditcardmarketing-bbm_3F73EC98278C499386578E40CADACC9B:qk]&quot;</bucket>
+            </map>
+            <map to='#cd9bbc'>
+              <bucket>&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q2 Balance:qk]&quot;</bucket>
+            </map>
+            <map to='#d9aaca'>
+              <bucket>&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[sum:\# Homes Owned:qk]&quot;</bucket>
+            </map>
+            <map to='#e5b8d8'>
+              <bucket>&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[sum:\# Credit Cards Held:qk]&quot;</bucket>
+            </map>
+            <map to='#eec9e5'>
+              <bucket>&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q1 Balance:qk]&quot;</bucket>
+            </map>
+            <map to='#eec9e5'>
+              <bucket>&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[sum:\# Bank Accounts Open:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbed1'>
+              <bucket>&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[sum:Q4 Balance:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Offer Accepted:nk]' palette='purple_pink_gray_10_0' type='palette'>
+            <map to='#8074a8'>
+              <bucket>&quot;No&quot;</bucket>
+            </map>
+            <map to='#c6c1f0'>
+              <bucket>&quot;Yes&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Deutschland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Parameter Average Balance' datatype='real' name='[Parameter Average Balance]' param-domain-type='any' role='measure' type='quantitative' value='700.'>
+          <calculation class='tableau' formula='700.' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='creditcardmarketing-bbm' id='creditcardmarketing-bbm_3F73EC98278C499386578E40CADACC9B'>
+            <properties context=''>
+              <relation connection='excel-direct.0h6dv7j01ilj6519ufi1w0zvpj10' name='creditcardmarketing-bbm' table='[&apos;creditcardmarketing-bbm$&apos;]' type='table'>
+                <columns gridOrigin='A1:Q10001:no:A1:Q2147483647:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Customer Number' ordinal='0' />
+                  <column datatype='string' name='Offer Accepted' ordinal='1' />
+                  <column datatype='string' name='Reward' ordinal='2' />
+                  <column datatype='string' name='Mailer Type' ordinal='3' />
+                  <column datatype='string' name='Income Level' ordinal='4' />
+                  <column datatype='integer' name='# Bank Accounts Open' ordinal='5' />
+                  <column datatype='string' name='Overdraft Protection' ordinal='6' />
+                  <column datatype='string' name='Credit Rating' ordinal='7' />
+                  <column datatype='integer' name='# Credit Cards Held' ordinal='8' />
+                  <column datatype='integer' name='# Homes Owned' ordinal='9' />
+                  <column datatype='real' name='Household Size' ordinal='10' />
+                  <column datatype='string' name='Own Your Home' ordinal='11' />
+                  <column datatype='real' name='Average Balance' ordinal='12' />
+                  <column datatype='integer' name='Q1 Balance' ordinal='13' />
+                  <column datatype='integer' name='Q2 Balance' ordinal='14' />
+                  <column datatype='integer' name='Q3 Balance' ordinal='15' />
+                  <column datatype='integer' name='Q4 Balance' ordinal='16' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='2'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='creditcardmarketing-bbm (creditcardmarketing)' name='federated.0td3coj1ralyfw14bli0v0wkrks8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0td3coj1ralyfw14bli0v0wkrks8'>
+            <column datatype='string' name='[Offer Accepted]' role='dimension' type='nominal' />
+            <column-instance column='[Offer Accepted]' derivation='Count' name='[cnt:Offer Accepted:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Offer Accepted]' derivation='None' name='[none:Offer Accepted:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Offer Accepted:qk]' scope='rows' value='Amount of customers' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' value='98' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#c290b4' />
+                <format attr='mark-transparency' value='231' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Offer Accepted:qk]</rows>
+        <cols>[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]</cols>
+      </table>
+      <simple-id uuid='{5E307011-17A6-45CD-95CE-446BF11DB449}' />
+    </worksheet>
+    <worksheet name='2.1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Pie chart</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='creditcardmarketing-bbm (creditcardmarketing)' name='federated.0td3coj1ralyfw14bli0v0wkrks8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0td3coj1ralyfw14bli0v0wkrks8'>
+            <column datatype='string' name='[Offer Accepted]' role='dimension' type='nominal' />
+            <column-instance column='[Offer Accepted]' derivation='Count' name='[cnt:Offer Accepted:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Offer Accepted]' derivation='None' name='[none:Offer Accepted:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Offer Accepted:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='size' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Offer Accepted:qk]' field-type='quantitative' max-size='1' min-size='0' type='quantsize' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='size' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Offer Accepted:qk]' value='Total Amount'>
+              <formatted-text>
+                <run>Total Amount</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' />
+              <size column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Offer Accepted:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C25E28A6-4BA4-41E3-9C1F-F5DE1A728FBC}' />
+    </worksheet>
+    <worksheet name='3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Percentage</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='creditcardmarketing-bbm (creditcardmarketing)' name='federated.0td3coj1ralyfw14bli0v0wkrks8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0td3coj1ralyfw14bli0v0wkrks8'>
+            <column datatype='string' name='[Offer Accepted]' role='dimension' type='nominal' />
+            <column-instance column='[Offer Accepted]' derivation='None' name='[none:Offer Accepted:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Offer Accepted]' derivation='Count' name='[pcto:cnt:Offer Accepted:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Offer Accepted:nk]' member='&quot;No&quot;' />
+              <groupfilter function='member' level='[none:Offer Accepted:nk]' member='&quot;Yes&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='85' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' value='160' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[pcto:cnt:Offer Accepted:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{07A8BC65-5996-482B-8A72-DDE9CDD83BA1}' />
+    </worksheet>
+    <worksheet name='3.1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Overview</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='creditcardmarketing-bbm (creditcardmarketing)' name='federated.0td3coj1ralyfw14bli0v0wkrks8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0td3coj1ralyfw14bli0v0wkrks8'>
+            <column datatype='string' name='[Offer Accepted]' role='dimension' type='nominal' />
+            <column-instance column='[Offer Accepted]' derivation='Count' name='[cnt:Offer Accepted:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Offer Accepted]' derivation='None' name='[none:Offer Accepted:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Offer Accepted]' derivation='Count' name='[pcto:cnt:Offer Accepted:qk:1]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Offer Accepted:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[pcto:cnt:Offer Accepted:qk:1]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0td3coj1ralyfw14bli0v0wkrks8].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[:Measure Names]' value='157' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' value='144' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]</rows>
+        <cols>[federated.0td3coj1ralyfw14bli0v0wkrks8].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{43881568-8D98-4A2C-953C-E698D0A938BB}' />
+    </worksheet>
+    <worksheet name='3.11'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Graphical representation</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='creditcardmarketing-bbm (creditcardmarketing)' name='federated.0td3coj1ralyfw14bli0v0wkrks8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0td3coj1ralyfw14bli0v0wkrks8'>
+            <column datatype='string' name='[Offer Accepted]' role='dimension' type='nominal' />
+            <column-instance column='[Offer Accepted]' derivation='None' name='[none:Offer Accepted:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Offer Accepted]' derivation='Count' name='[pcto:cnt:Offer Accepted:qk:1]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Offer Accepted:nk]' member='&quot;No&quot;' />
+              <groupfilter function='member' level='[none:Offer Accepted:nk]' member='&quot;Yes&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[pcto:cnt:Offer Accepted:qk:1]' />
+              <color column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{9CE6ABB0-F571-471D-B70B-6D28091D214F}' />
+    </worksheet>
+    <worksheet name='4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average balance Q1-Q4</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='creditcardmarketing-bbm (creditcardmarketing)' name='federated.0td3coj1ralyfw14bli0v0wkrks8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0td3coj1ralyfw14bli0v0wkrks8'>
+            <column datatype='string' name='[Offer Accepted]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Q1 Balance]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Q2 Balance]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Q3 Balance]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Q4 Balance]' role='measure' type='quantitative' />
+            <column-instance column='[Q1 Balance]' derivation='Avg' name='[avg:Q1 Balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Q2 Balance]' derivation='Avg' name='[avg:Q2 Balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Q3 Balance]' derivation='Avg' name='[avg:Q3 Balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Q4 Balance]' derivation='Avg' name='[avg:Q4 Balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Offer Accepted]' derivation='None' name='[none:Offer Accepted:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q1 Balance:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q2 Balance:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q3 Balance:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q4 Balance:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0td3coj1ralyfw14bli0v0wkrks8].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[Multiple Values]' scope='rows' value='Average Balance' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[:Measure Names]' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0td3coj1ralyfw14bli0v0wkrks8].[Multiple Values]</rows>
+        <cols>([federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk] / [federated.0td3coj1ralyfw14bli0v0wkrks8].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{06800026-0882-47D0-970E-8943861C9D40}' />
+    </worksheet>
+    <worksheet name='4-1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='creditcardmarketing-bbm (creditcardmarketing)' name='federated.0td3coj1ralyfw14bli0v0wkrks8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0td3coj1ralyfw14bli0v0wkrks8'>
+            <column datatype='string' name='[Offer Accepted]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Q1 Balance]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Q2 Balance]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Q3 Balance]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Q4 Balance]' role='measure' type='quantitative' />
+            <column-instance column='[Q1 Balance]' derivation='Avg' name='[avg:Q1 Balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Q2 Balance]' derivation='Avg' name='[avg:Q2 Balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Q3 Balance]' derivation='Avg' name='[avg:Q3 Balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Q4 Balance]' derivation='Avg' name='[avg:Q4 Balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Offer Accepted]' derivation='None' name='[none:Offer Accepted:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q2 Balance:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q3 Balance:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q4 Balance:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q1 Balance:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q1 Balance:qk] + ([federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q2 Balance:qk] + ([federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q3 Balance:qk] + [federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q4 Balance:qk])))</rows>
+        <cols>[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]</cols>
+      </table>
+      <simple-id uuid='{4144ACE7-7B25-4872-821A-7018816C60C0}' />
+    </worksheet>
+    <worksheet name='4.11'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Q1</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='creditcardmarketing-bbm (creditcardmarketing)' name='federated.0td3coj1ralyfw14bli0v0wkrks8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0td3coj1ralyfw14bli0v0wkrks8'>
+            <column datatype='string' name='[Offer Accepted]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Q1 Balance]' role='measure' type='quantitative' />
+            <column-instance column='[Q1 Balance]' derivation='Avg' name='[avg:Q1 Balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Offer Accepted]' derivation='None' name='[none:Offer Accepted:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q1 Balance:qk]' scope='rows' value='Average Balance Q1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#b07aa1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q1 Balance:qk]</rows>
+        <cols>[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]</cols>
+      </table>
+      <simple-id uuid='{99F2C82A-A2A7-49D0-B176-1110786AC793}' />
+    </worksheet>
+    <worksheet name='4.12'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Q2</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='creditcardmarketing-bbm (creditcardmarketing)' name='federated.0td3coj1ralyfw14bli0v0wkrks8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0td3coj1ralyfw14bli0v0wkrks8'>
+            <column datatype='string' name='[Offer Accepted]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Q2 Balance]' role='measure' type='quantitative' />
+            <column-instance column='[Q2 Balance]' derivation='Avg' name='[avg:Q2 Balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Offer Accepted]' derivation='None' name='[none:Offer Accepted:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q2 Balance:qk]' scope='rows' value='Average Balance Q2' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q2 Balance:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#d37295' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q2 Balance:qk]</rows>
+        <cols>[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]</cols>
+      </table>
+      <simple-id uuid='{5DEC231F-17CB-4930-88DB-E46290B7EC22}' />
+    </worksheet>
+    <worksheet name='4.13'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Q3</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='creditcardmarketing-bbm (creditcardmarketing)' name='federated.0td3coj1ralyfw14bli0v0wkrks8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0td3coj1ralyfw14bli0v0wkrks8'>
+            <column datatype='string' name='[Offer Accepted]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Q3 Balance]' role='measure' type='quantitative' />
+            <column-instance column='[Q3 Balance]' derivation='Avg' name='[avg:Q3 Balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Offer Accepted]' derivation='None' name='[none:Offer Accepted:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q3 Balance:qk]' scope='rows' value='Average Balance Q3' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#d4a6c8' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q3 Balance:qk]</rows>
+        <cols>[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]</cols>
+      </table>
+      <simple-id uuid='{4839CA0D-AF4A-448F-944B-F628CF2C9C4C}' />
+    </worksheet>
+    <worksheet name='4.14'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Q4</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='creditcardmarketing-bbm (creditcardmarketing)' name='federated.0td3coj1ralyfw14bli0v0wkrks8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0td3coj1ralyfw14bli0v0wkrks8'>
+            <column datatype='string' name='[Offer Accepted]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Q4 Balance]' role='measure' type='quantitative' />
+            <column-instance column='[Q4 Balance]' derivation='Avg' name='[avg:Q4 Balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Offer Accepted]' derivation='None' name='[none:Offer Accepted:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q4 Balance:qk]' scope='rows' value='Average Balance Q4' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#fabfd2' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q4 Balance:qk]</rows>
+        <cols>[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]</cols>
+      </table>
+      <simple-id uuid='{462C20C7-B0C7-4605-9E86-225739AC600F}' />
+    </worksheet>
+    <worksheet name='5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average balance Q1-Q4</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='creditcardmarketing-bbm (creditcardmarketing)' name='federated.0td3coj1ralyfw14bli0v0wkrks8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0td3coj1ralyfw14bli0v0wkrks8'>
+            <column datatype='string' name='[Offer Accepted]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Q1 Balance]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Q2 Balance]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Q3 Balance]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Q4 Balance]' role='measure' type='quantitative' />
+            <column-instance column='[Q1 Balance]' derivation='Avg' name='[avg:Q1 Balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Q2 Balance]' derivation='Avg' name='[avg:Q2 Balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Q3 Balance]' derivation='Avg' name='[avg:Q3 Balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Q4 Balance]' derivation='Avg' name='[avg:Q4 Balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Offer Accepted]' derivation='None' name='[none:Offer Accepted:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q1 Balance:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q2 Balance:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q3 Balance:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q4 Balance:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0td3coj1ralyfw14bli0v0wkrks8].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[Multiple Values]' scope='rows' value='Average Balance' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[Multiple Values]' field-type='quantitative' max='1200.0' min='600.0' range-type='fixed' scale='log' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[:Measure Names]' value='Average balance'>
+              <formatted-text>
+                <run>Average balance</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0td3coj1ralyfw14bli0v0wkrks8].[Multiple Values]</rows>
+        <cols>([federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk] / [federated.0td3coj1ralyfw14bli0v0wkrks8].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{C46DB03B-8441-44EB-8F1D-99B0AB7B452C}' />
+    </worksheet>
+    <worksheet name='6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Balance Q1-Q4</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='creditcardmarketing-bbm (creditcardmarketing)' name='federated.0td3coj1ralyfw14bli0v0wkrks8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0td3coj1ralyfw14bli0v0wkrks8'>
+            <column datatype='real' name='[Household Size]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Q1 Balance]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Q2 Balance]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Q3 Balance]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Q4 Balance]' role='measure' type='quantitative' />
+            <column-instance column='[Q1 Balance]' derivation='Avg' name='[avg:Q1 Balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Q2 Balance]' derivation='Avg' name='[avg:Q2 Balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Q3 Balance]' derivation='Avg' name='[avg:Q3 Balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Q4 Balance]' derivation='Avg' name='[avg:Q4 Balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Household Size]' derivation='None' name='[none:Household Size:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q1 Balance:qk]' scope='rows' value='Q1' />
+            <format attr='title' class='0' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q2 Balance:qk]' scope='rows' value='Q2' />
+            <format attr='title' class='0' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q3 Balance:qk]' scope='rows' value='Q3' />
+            <format attr='title' class='0' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q4 Balance:qk]' scope='rows' value='Q4' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q1 Balance:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#b07aa1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q2 Balance:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#d4a6c8' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q3 Balance:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#e799b3' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q4 Balance:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#fabfd2' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q1 Balance:qk] + ([federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q2 Balance:qk] + ([federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q3 Balance:qk] + [federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q4 Balance:qk])))</rows>
+        <cols>[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Household Size:ok]</cols>
+      </table>
+      <simple-id uuid='{686C3CE3-2742-4FF5-BC54-45EA6276376C}' />
+    </worksheet>
+    <worksheet name='6.1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Number of records (customers)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='creditcardmarketing-bbm (creditcardmarketing)' name='federated.0td3coj1ralyfw14bli0v0wkrks8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0td3coj1ralyfw14bli0v0wkrks8'>
+            <column datatype='real' name='[Household Size]' role='dimension' type='ordinal' />
+            <column-instance column='[Household Size]' derivation='Count' name='[cnt:Household Size:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Household Size]' derivation='None' name='[none:Household Size:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Household Size:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Household Size:ok]</cols>
+      </table>
+      <simple-id uuid='{D7F1710B-3815-48B5-B4A3-CD0B54336711}' />
+    </worksheet>
+    <worksheet name='6.11'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Balance Q1-Q4</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='creditcardmarketing-bbm (creditcardmarketing)' name='federated.0td3coj1ralyfw14bli0v0wkrks8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0td3coj1ralyfw14bli0v0wkrks8'>
+            <column datatype='real' name='[Household Size]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Offer Accepted]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Q1 Balance]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Q2 Balance]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Q3 Balance]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Q4 Balance]' role='measure' type='quantitative' />
+            <column-instance column='[Q1 Balance]' derivation='Avg' name='[avg:Q1 Balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Q2 Balance]' derivation='Avg' name='[avg:Q2 Balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Q3 Balance]' derivation='Avg' name='[avg:Q3 Balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Q4 Balance]' derivation='Avg' name='[avg:Q4 Balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Household Size]' derivation='None' name='[none:Household Size:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Offer Accepted]' derivation='None' name='[none:Offer Accepted:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q1 Balance:qk]' scope='rows' value='Q1' />
+            <format attr='title' class='0' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q2 Balance:qk]' scope='rows' value='Q2' />
+            <format attr='title' class='0' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q3 Balance:qk]' scope='rows' value='Q3' />
+            <format attr='title' class='0' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q4 Balance:qk]' scope='rows' value='Q4' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#b07aa1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q1 Balance:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#b07aa1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q2 Balance:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#b07aa1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q3 Balance:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#b07aa1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q4 Balance:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#b07aa1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q1 Balance:qk] + ([federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q2 Balance:qk] + ([federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q3 Balance:qk] + [federated.0td3coj1ralyfw14bli0v0wkrks8].[avg:Q4 Balance:qk])))</rows>
+        <cols>([federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Household Size:ok] / [federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk])</cols>
+      </table>
+      <simple-id uuid='{CC8663B6-AC08-4C04-80E4-481F52D1E700}' />
+    </worksheet>
+    <worksheet name='7.1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Overdraft Protection </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='creditcardmarketing-bbm (creditcardmarketing)' name='federated.0td3coj1ralyfw14bli0v0wkrks8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0td3coj1ralyfw14bli0v0wkrks8'>
+            <column datatype='string' name='[Offer Accepted]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Overdraft Protection]' role='dimension' type='nominal' />
+            <column-instance column='[Offer Accepted]' derivation='Count' name='[cnt:Offer Accepted:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Offer Accepted]' derivation='None' name='[none:Offer Accepted:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Overdraft Protection]' derivation='None' name='[none:Overdraft Protection:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Overdraft Protection:nk]' value='96' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' value='140' />
+            <format attr='width' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Overdraft Protection:nk]' value='200' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Offer Accepted:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Overdraft Protection:nk]</rows>
+        <cols>[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]</cols>
+      </table>
+      <simple-id uuid='{8E9E4D1E-41EB-460B-A661-30DFC952961F}' />
+    </worksheet>
+    <worksheet name='7.11'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='creditcardmarketing-bbm (creditcardmarketing)' name='federated.0td3coj1ralyfw14bli0v0wkrks8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0td3coj1ralyfw14bli0v0wkrks8'>
+            <column datatype='string' name='[Offer Accepted]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Overdraft Protection]' role='dimension' type='nominal' />
+            <column-instance column='[Offer Accepted]' derivation='Count' name='[cnt:Offer Accepted:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Offer Accepted]' derivation='None' name='[none:Offer Accepted:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Overdraft Protection]' derivation='None' name='[none:Overdraft Protection:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Offer Accepted]' derivation='Count' name='[pcto:cnt:Offer Accepted:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='362' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Offer Accepted:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Offer Accepted:qk]' max='14447' type='interpolated' />
+            <encoding attr='size-bar' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[pcto:cnt:Offer Accepted:qk:2]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[pcto:cnt:Offer Accepted:qk:2]' max='14447' type='interpolated' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Offer Accepted:qk]' value='Total amount'>
+              <formatted-text>
+                <run>Total amount</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[pcto:cnt:Offer Accepted:qk:2]' />
+              <color column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Offer Accepted:qk]' />
+              <text column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' />
+              <text column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Overdraft Protection:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{A66BA7F1-6C88-489C-A58E-8AA8CE702E08}' />
+    </worksheet>
+    <worksheet name='7.2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Mailer type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='creditcardmarketing-bbm (creditcardmarketing)' name='federated.0td3coj1ralyfw14bli0v0wkrks8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0td3coj1ralyfw14bli0v0wkrks8'>
+            <column datatype='string' name='[Mailer Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Offer Accepted]' role='dimension' type='nominal' />
+            <column-instance column='[Offer Accepted]' derivation='Count' name='[cnt:Offer Accepted:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Mailer Type]' derivation='None' name='[none:Mailer Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Offer Accepted]' derivation='None' name='[none:Offer Accepted:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' value='68' />
+            <format attr='width' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Mailer Type:nk]' value='89' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Mailer Type:nk]' value='120' />
+            <format attr='width' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' value='136' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Offer Accepted:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Mailer Type:nk]</rows>
+        <cols>[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]</cols>
+      </table>
+      <simple-id uuid='{8012D471-FE9B-4D5C-83E7-E86583E00EEB}' />
+    </worksheet>
+    <worksheet name='7.22'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='creditcardmarketing-bbm (creditcardmarketing)' name='federated.0td3coj1ralyfw14bli0v0wkrks8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0td3coj1ralyfw14bli0v0wkrks8'>
+            <column datatype='string' name='[Mailer Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Offer Accepted]' role='dimension' type='nominal' />
+            <column-instance column='[Offer Accepted]' derivation='Count' name='[cnt:Offer Accepted:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Mailer Type]' derivation='None' name='[none:Mailer Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Offer Accepted]' derivation='None' name='[none:Offer Accepted:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Offer Accepted]' derivation='Count' name='[pcto:cnt:Offer Accepted:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[pcto:cnt:Offer Accepted:qk:2]' />
+              <color column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Offer Accepted:qk]' />
+              <text column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Mailer Type:nk]' />
+              <text column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{79F41958-47D6-4738-B73B-273A53E87671}' />
+    </worksheet>
+    <worksheet name='7.3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Credit Rating</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='creditcardmarketing-bbm (creditcardmarketing)' name='federated.0td3coj1ralyfw14bli0v0wkrks8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0td3coj1ralyfw14bli0v0wkrks8'>
+            <column datatype='string' name='[Credit Rating]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Offer Accepted]' role='dimension' type='nominal' />
+            <column-instance column='[Offer Accepted]' derivation='Count' name='[cnt:Offer Accepted:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Credit Rating]' derivation='None' name='[none:Credit Rating:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Offer Accepted]' derivation='None' name='[none:Offer Accepted:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Credit Rating:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Low&quot;</bucket>
+              <bucket>&quot;Medium&quot;</bucket>
+              <bucket>&quot;High&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' value='78' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Credit Rating:nk]' value='132' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Offer Accepted:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Credit Rating:nk]</rows>
+        <cols>[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]</cols>
+      </table>
+      <simple-id uuid='{DF0E71BD-6063-4543-8D8B-B66BDCA40618}' />
+    </worksheet>
+    <worksheet name='7.33'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='creditcardmarketing-bbm (creditcardmarketing)' name='federated.0td3coj1ralyfw14bli0v0wkrks8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0td3coj1ralyfw14bli0v0wkrks8'>
+            <column datatype='string' name='[Credit Rating]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Offer Accepted]' role='dimension' type='nominal' />
+            <column-instance column='[Offer Accepted]' derivation='Count' name='[cnt:Offer Accepted:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Credit Rating]' derivation='None' name='[none:Credit Rating:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Offer Accepted]' derivation='None' name='[none:Offer Accepted:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Offer Accepted]' derivation='Count' name='[pcto:cnt:Offer Accepted:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <manual-sort column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Credit Rating:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Low&quot;</bucket>
+              <bucket>&quot;Medium&quot;</bucket>
+              <bucket>&quot;High&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[pcto:cnt:Offer Accepted:qk:2]' />
+              <color column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Offer Accepted:qk]' />
+              <text column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' />
+              <text column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Credit Rating:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{4671D3EB-8B7A-4717-B6E5-B5306BA59496}' />
+    </worksheet>
+    <worksheet name='8'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Amount of customers per avg balance categories</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='creditcardmarketing-bbm (creditcardmarketing)' name='federated.0td3coj1ralyfw14bli0v0wkrks8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0td3coj1ralyfw14bli0v0wkrks8'>
+            <column datatype='real' name='[Average Balance]' role='measure' type='quantitative' />
+            <column caption='Categories Average Balance' datatype='string' name='[Calculation_461900448577961986]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Average Balance] &lt;= 700 THEN &apos;Category A&apos;&#13;&#10;ELSEIF [Average Balance] &gt; 700 AND [Average Balance] &lt;= 1400 THEN &apos;Category B&apos;&#13;&#10;ELSEIF [Average Balance] &gt; 1400 AND [Average Balance] &lt;= 1900 THEN &apos;Category C&apos;&#13;&#10;ELSEIF [Average Balance] &gt; 1900 AND [Average Balance] &lt;= 3366 THEN &apos;Category D&apos;&#13;&#10;END' />
+            </column>
+            <column datatype='string' name='[Offer Accepted]' role='dimension' type='nominal' />
+            <column-instance column='[Average Balance]' derivation='Count' name='[cnt:Average Balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_461900448577961986]' derivation='None' name='[none:Calculation_461900448577961986:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Offer Accepted]' derivation='None' name='[none:Offer Accepted:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Calculation_461900448577961986:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Calculation_461900448577961986:nk]' />
+              <groupfilter function='member' level='[none:Calculation_461900448577961986:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Calculation_461900448577961986:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Average Balance:qk]' scope='rows' value='Number of customers' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Calculation_461900448577961986:nk]' value='157' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Average Balance:qk]</rows>
+        <cols>[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Calculation_461900448577961986:nk]</cols>
+        <show-full-range>
+          <column>[federated.0td3coj1ralyfw14bli0v0wkrks8].[Average Balance (Partition)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{4A61A8DD-1EBC-42D3-8828-15026971F7F1}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Story 1' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Presentation of results</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='968' maxwidth='1124' minheight='968' minwidth='1124' preset-index='17' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98348' id='1' param='vert' removable='false' type-v2='layout-flow' w='98576' x='712' y='826'>
+            <zone h='5165' id='3' type-v2='title' w='98576' x='712' y='826' />
+            <zone h='10434' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98576' x='712' y='5991' />
+            <zone h='82749' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98576' x='712' y='16425'>
+              <flipboard active-id='7' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='question 2' captured-sheet='qu. 2' id='1' />
+                  <story-point caption='question 3' captured-sheet='qu. 3' id='10' />
+                  <story-point caption='question 4' captured-sheet='qu. 4' id='3' />
+                  <story-point caption='question 5' captured-sheet='qu. 5' id='4' />
+                  <story-point caption='question 6' captured-sheet='qu. 6' id='5' />
+                  <story-point caption='question 6.1' captured-sheet='qu. 6.1' id='9' />
+                  <story-point caption='question 7' captured-sheet='qu. 7' id='6' />
+                  <story-point caption='question 8' captured-sheet='qu. 8' id='7' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{66B033BF-8890-43FC-8EC9-CD083A4A7F9B}' />
+    </dashboard>
+    <dashboard name='qu. 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Actual numbers for (un)accepted offers</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='20' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='7250' id='21' type-v2='title' w='98400' x='800' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='90750' id='5' param='horz' type-v2='layout-flow' w='98400' x='800' y='8250'>
+              <zone h='90750' id='3' type-v2='layout-basic' w='98400' x='800' y='8250'>
+                <zone h='90750' id='8' name='2' w='98400' x='800' y='8250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run>Actual numbers for (un)accepted offers</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='39' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='38' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone h='7250' id='21' type-v2='title' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='90750' id='8' is-fixed='true' name='2' w='98400' x='800' y='8250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{7A430717-5A42-4079-A26A-705B3B6A8E29}' />
+    </dashboard>
+    <dashboard name='qu. 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Percentage for (un)accepted offers</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='16' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='7250' id='17' type-v2='title' w='98400' x='800' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='90750' id='9' param='horz' type-v2='layout-flow' w='98400' x='800' y='8250'>
+              <zone h='90750' id='7' type-v2='layout-basic' w='64200' x='800' y='8250'>
+                <zone h='17478' id='5' name='3.1' w='64200' x='800' y='8250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='73272' id='6' name='3.11' w='64200' x='800' y='25728'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone fixed-size='342' h='90750' id='13' is-fixed='true' type-v2='layout-basic' w='34200' x='65000' y='8250'>
+                <zone h='50375' id='8' param='vert' type-v2='layout-flow' w='34200' x='65000' y='8250'>
+                  <zone fixed-size='170' forceUpdate='true' h='22250' id='12' is-fixed='true' type-v2='text' w='34200' x='65000' y='8250'>
+                    <formatted-text>
+                      <run>We can see that the majority of customers does not accept the credit card offer.</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone h='40375' id='14' param='vert' type-v2='layout-flow' w='34200' x='65000' y='58625'>
+                  <zone fixed-size='558' h='40375' id='10' is-fixed='true' name='3.11' pane-specification-id='0' param='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' type-v2='color' w='34200' x='65000' y='58625'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run>Percentage for (un)accepted offers</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='35' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='34' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='7250' id='17' type-v2='title' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='132' h='17478' id='5' is-fixed='true' name='3.1' w='64200' x='800' y='8250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='170' forceUpdate='true' h='22250' id='12' type-v2='text' w='34200' x='65000' y='8250'>
+                  <formatted-text>
+                    <run>We can see that the majority of customers does not accept the credit card offer.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='73272' id='6' is-fixed='true' name='3.11' w='64200' x='800' y='25728'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='558' h='40375' id='10' name='3.11' pane-specification-id='0' param='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' type-v2='color' w='34200' x='65000' y='58625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{AE3485CF-AAEF-49D5-BEDA-8CF585220F4E}' />
+    </dashboard>
+    <dashboard name='qu. 4'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='98000' id='3' name='4' w='98400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='31' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='30' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='4' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{4618F093-3251-4BB3-B63C-AFCEDAFCBCB3}' />
+    </dashboard>
+    <dashboard name='qu. 4.1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='49000' id='3' name='4.11' w='49200' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49000' id='5' name='4.12' w='49200' x='50000' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49000' id='6' name='4.13' w='49200' x='800' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49000' id='7' name='4.14' w='49200' x='50000' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1200' minheight='1200' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='33' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='32' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='4.11' w='49200' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='5' is-fixed='true' name='4.12' w='49200' x='50000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='6' is-fixed='true' name='4.13' w='49200' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='7' is-fixed='true' name='4.14' w='49200' x='50000' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{44119C17-61FF-426B-AA64-30CE44BAAB8E}' />
+    </dashboard>
+    <dashboard name='qu. 5'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='98000' id='3' name='5' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='16750' id='8' name='5' pane-specification-id='0' param='[federated.0td3coj1ralyfw14bli0v0wkrks8].[:Measure Names]' type-v2='color' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='610' h='77250' id='11' is-fixed='true' type-v2='text' w='16000' x='83200' y='17750'>
+                <formatted-text>
+                  <run>When comparing the average balance per quarter the tendency is the same for customers who accepted and who didn&apos;t accept the offer. 
+The average balance is the highest in Q3 and the lowest in Q4.</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='21' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='20' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='5' w='82400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='16750' id='8' name='5' pane-specification-id='0' param='[federated.0td3coj1ralyfw14bli0v0wkrks8].[:Measure Names]' type-v2='color' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='610' h='77250' id='11' type-v2='text' w='16000' x='83200' y='17750'>
+                  <formatted-text>
+                    <run>When comparing the average balance per quarter the tendency is the same for customers who accepted and who didn&apos;t accept the offer. 
+The average balance is the highest in Q3 and the lowest in Q4.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D4B72E99-6294-4185-AE4D-FDB820A2E66B}' />
+    </dashboard>
+    <dashboard name='qu. 6'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='79750' id='3' name='6' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='18250' id='5' name='6.1' w='49200' x='800' y='80750'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='18250' id='22' type-v2='text' w='49200' x='50000' y='80750'>
+            <formatted-text>
+              <run>The average balance is lowest in Q4 for all household sizes except a household size of 8 or 9. However these household sizes only consist of one customer each and can be disregarded.</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='28' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='27' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='79750' id='3' is-fixed='true' name='6' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='138' h='18250' id='5' is-fixed='true' name='6.1' w='49200' x='800' y='80750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='18250' id='22' type-v2='text' w='49200' x='50000' y='80750'>
+                  <formatted-text>
+                    <run>The average balance is lowest in Q4 for all household sizes except a household size of 8 or 9. However these household sizes only consist of one customer each and can be disregarded.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{1C73A55F-A775-469A-8CBD-DB62A4B51340}' />
+    </dashboard>
+    <dashboard name='qu. 6.1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='82000' x='800' y='1000'>
+              <zone h='80875' id='3' name='6.11' w='82000' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='17125' id='9' name='6.1' w='51100' x='800' y='81875'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone forceUpdate='true' h='17125' id='10' type-v2='text' w='30900' x='51900' y='81875'>
+                <formatted-text>
+                  <run>For a household size of 1 the average balance is lower in all quarters for customers who accepted the credit card offer.</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='164' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='16400' x='82800' y='1000'>
+              <zone h='10500' id='8' name='6.11' pane-specification-id='1' param='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' type-v2='color' w='16400' x='82800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='17' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='80875' id='3' is-fixed='true' name='6.11' w='82000' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10500' id='8' name='6.11' pane-specification-id='1' param='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' type-v2='color' w='16400' x='82800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='129' h='17125' id='9' is-fixed='true' name='6.1' w='51100' x='800' y='81875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='17125' id='10' type-v2='text' w='30900' x='51900' y='81875'>
+                  <formatted-text>
+                    <run>For a household size of 1 the average balance is lower in all quarters for customers who accepted the credit card offer.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A73DE065-4DA1-4F4A-951E-C64C8DC1937D}' />
+    </dashboard>
+    <dashboard name='qu. 7'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='79000' id='10' param='horz' type-v2='layout-flow' w='98400' x='800' y='20000'>
+            <zone h='79000' id='8' type-v2='layout-basic' w='82400' x='800' y='20000'>
+              <zone h='25998' id='3' name='7.1' w='41200' x='800' y='20000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='29323' id='5' name='7.2' w='41200' x='800' y='45998'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='23679' id='6' name='7.3' w='41200' x='800' y='75321'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='25998' id='7' name='7.11' w='41200' x='42000' y='20000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='29323' id='34' name='7.22' w='41200' x='42000' y='45998'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='23679' id='35' name='7.33' w='41200' x='42000' y='75321'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='79000' id='9' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='20000'>
+              <zone h='10125' id='11' name='7.11' pane-specification-id='0' param='[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Offer Accepted:qk]' type-v2='color' w='16000' x='83200' y='20000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone forceUpdate='true' h='19000' id='36' type-v2='text' w='41200' x='800' y='1000'>
+            <formatted-text>
+              <run fontsize='24'>Actual numbers</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='19000' id='37' type-v2='text' w='57200' x='42000' y='1000'>
+            <formatted-text>
+              <run fontsize='24'>Proportion</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1150' minheight='1150' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='33' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='32' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='250' h='32250' id='3' is-fixed='true' name='7.1' w='41200' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='250' h='32250' id='7' is-fixed='true' name='7.11' w='41200' x='42000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10125' id='11' name='7.11' pane-specification-id='0' param='[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Offer Accepted:qk]' type-v2='color' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36375' id='5' is-fixed='true' name='7.2' w='82400' x='800' y='33250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='227' h='29375' id='6' is-fixed='true' name='7.3' w='82400' x='800' y='69625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{23A51D5D-DD97-4874-ACEF-3A838665FF11}' />
+    </dashboard>
+    <dashboard name='qu. 8'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='98000' id='3' name='8' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='10500' id='8' name='8' pane-specification-id='0' param='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' type-v2='color' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='329' forceUpdate='true' h='42125' id='33' is-fixed='true' type-v2='text' w='16000' x='83200' y='11500'>
+                <formatted-text>
+                  <run>Æ&#10;&#10;</run>
+                  <run bold='true'>Category A: </run>
+                  <run>&#10;0 - 700 EUR&#10;&#10;</run>
+                  <run bold='true'>Category B: </run>
+                  <run>&#10;701 - 1400 EUR&#10;&#10;</run>
+                  <run bold='true'>Category C: </run>
+                  <run>&#10;1401 - 1900 EUR&#10;&#10;</run>
+                  <run bold='true'>Category D:</run>
+                  <run> &#10;1901 - 3366 EUR</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='32' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='31' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='81875' id='3' is-fixed='true' name='8' w='82400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10500' id='8' name='8' pane-specification-id='0' param='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' type-v2='color' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{9C7498AF-3C5B-4069-AD56-BBFE8A2F8D8E}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='dashboard' maximized='true' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{0510A58B-FA6E-45F7-8D2E-E7AFF38DCD12}' />
+    </window>
+    <window class='worksheet' name='2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4A9A29D4-FCB4-4C39-BB48-7D6CC6F93E73}' />
+    </window>
+    <window class='worksheet' name='2.1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Offer Accepted:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{828609A5-C6D8-4014-AD78-ECA662401047}' />
+    </window>
+    <window class='dashboard' name='qu. 2'>
+      <viewpoints>
+        <viewpoint name='2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{530D330D-0085-4AAE-AB66-A7608C477CCE}' />
+    </window>
+    <window class='worksheet' name='3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0B25FAFB-39B2-4373-B18C-70AE568BEA8C}' />
+    </window>
+    <window class='worksheet' name='3.1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C945C5CA-5002-43AE-8023-A5C739E83C77}' />
+    </window>
+    <window class='worksheet' name='3.11'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{925276F0-9EAA-4D6F-9CD5-02113D72E0BE}' />
+    </window>
+    <window class='dashboard' name='qu. 3'>
+      <viewpoints>
+        <viewpoint name='3.1' />
+        <viewpoint name='3.11' />
+      </viewpoints>
+      <active id='12' />
+      <simple-id uuid='{417A9227-A39D-402E-939F-BB6332993CA5}' />
+    </window>
+    <window class='worksheet' name='4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0td3coj1ralyfw14bli0v0wkrks8].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7ED7885F-95B8-4140-A26E-E75C6B0F662E}' />
+    </window>
+    <window class='worksheet' name='4-1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='5' param='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{350CFB76-E1CC-41D7-82B6-F547AD554F8D}' />
+    </window>
+    <window class='dashboard' name='qu. 4'>
+      <viewpoints>
+        <viewpoint name='4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{0006FE12-E98E-4EE5-9CFA-D347F0A628BE}' />
+    </window>
+    <window class='worksheet' name='4.11'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{26003B6F-817E-4AE6-A6E3-4984A3CC4C07}' />
+    </window>
+    <window class='worksheet' name='4.12'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7975CA89-56D0-4BDE-AF4F-D6599F09C981}' />
+    </window>
+    <window class='worksheet' name='4.13'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{49ABF29F-E9EB-4D82-9228-CDC060AA2BE9}' />
+    </window>
+    <window class='worksheet' name='4.14'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DB843D84-D6E1-4FE7-907E-DD826305509A}' />
+    </window>
+    <window class='dashboard' name='qu. 4.1'>
+      <viewpoints>
+        <viewpoint name='4.11'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='4.12'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='4.13'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='4.14'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{8FEFC9A4-771E-4D21-B306-3FB2776E5501}' />
+    </window>
+    <window class='worksheet' name='5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0td3coj1ralyfw14bli0v0wkrks8].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{81B4C006-7F6E-4B8F-95DC-5963DC665AC8}' />
+    </window>
+    <window class='dashboard' name='qu. 5'>
+      <viewpoints>
+        <viewpoint name='5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{B05B35F8-A0A8-4774-B4B4-AC672904748B}' />
+    </window>
+    <window class='worksheet' name='6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E4480F4B-DC87-443C-AC8C-14205E01A9CE}' />
+    </window>
+    <window class='dashboard' name='qu. 6'>
+      <viewpoints>
+        <viewpoint name='6'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='6.1' />
+      </viewpoints>
+      <active id='22' />
+      <simple-id uuid='{8E171BAA-36FF-4537-9CDD-358AB4544437}' />
+    </window>
+    <window class='worksheet' name='6.11'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='1' param='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0C12EDA6-8E87-4008-8EC4-BA41017A5286}' />
+    </window>
+    <window class='dashboard' name='qu. 6.1'>
+      <viewpoints>
+        <viewpoint name='6.1' />
+        <viewpoint name='6.11'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{0638D396-DDCD-4306-8E13-AAF87682FA5C}' />
+    </window>
+    <window class='worksheet' name='6.1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4934CC5B-730A-4A81-985C-6A6B9D002A88}' />
+    </window>
+    <window class='worksheet' name='7.1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BABFD573-F422-446E-9F83-934CC5BA9226}' />
+    </window>
+    <window class='worksheet' name='7.11'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Offer Accepted:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7ADC1032-83A2-47B5-B9B6-6FCFD224A3C1}' />
+    </window>
+    <window class='worksheet' name='7.2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0E2C7D6E-FEE1-41A9-AF08-28B2AE0DC081}' />
+    </window>
+    <window class='worksheet' name='7.22'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Offer Accepted:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C2297DFD-AEF9-450B-81A7-312B630943F6}' />
+    </window>
+    <window class='worksheet' name='7.3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C3DD6E58-FF27-4B4E-9808-A813FEF498F6}' />
+    </window>
+    <window class='worksheet' name='7.33'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Offer Accepted:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0F3EA765-3A29-47AD-A49E-CD283B0E6904}' />
+    </window>
+    <window class='dashboard' name='qu. 7'>
+      <viewpoints>
+        <viewpoint name='7.1'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='7.11'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='7.2'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='7.22'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='7.3'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='7.33'>
+          <zoom type='fit-width' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{749211A4-402C-4AE3-A2FE-99EB03ECC854}' />
+    </window>
+    <window class='worksheet' name='8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B36E3F73-BFB3-40BE-9FB9-246DEB950C4D}' />
+    </window>
+    <window class='dashboard' name='qu. 8'>
+      <viewpoints>
+        <viewpoint name='8'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{599DAF06-A48E-42FD-A8E8-AE4FC685A510}' />
+    </window>
+  </windows>
+</workbook>
