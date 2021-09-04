@@ -1635,7 +1635,7 @@
             <encoding attr='size-bar' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Offer Accepted:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
             <encoding attr='color' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Offer Accepted:qk]' max='14447' type='interpolated' />
             <encoding attr='size-bar' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[pcto:cnt:Offer Accepted:qk:2]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
-            <encoding attr='color' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[pcto:cnt:Offer Accepted:qk:2]' max='14447' type='interpolated' />
+            <encoding attr='color' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[pcto:cnt:Offer Accepted:qk:2]' max='14447.0' type='interpolated' />
           </style-rule>
           <style-rule element='legend-title-text'>
             <format attr='color' field='[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Offer Accepted:qk]' value='Total amount'>
@@ -2011,7 +2011,7 @@
             <zone h='5165' id='3' type-v2='title' w='98576' x='712' y='826' />
             <zone h='10434' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98576' x='712' y='5991' />
             <zone h='82749' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98576' x='712' y='16425'>
-              <flipboard active-id='7' nav-type='caption' show-nav-arrows='true'>
+              <flipboard active-id='10' nav-type='caption' show-nav-arrows='true'>
                 <story-points>
                   <story-point caption='question 2' captured-sheet='qu. 2' id='1' />
                   <story-point caption='question 3' captured-sheet='qu. 3' id='10' />
@@ -2088,8 +2088,8 @@
           </layout-options>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='39' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='38' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+            <zone h='100000' id='41' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='40' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone h='7250' id='21' type-v2='title' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2207,8 +2207,8 @@
           </layout-options>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='35' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='34' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='37' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='36' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone h='7250' id='17' type-v2='title' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2299,8 +2299,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='31' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='30' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='33' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='32' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='4' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2372,8 +2372,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1200' minheight='1200' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='33' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='32' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='35' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='34' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='4.11' w='49200' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2474,8 +2474,8 @@ The average balance is the highest in Q3 and the lowest in Q4.</run>
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='21' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='20' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='23' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='22' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='5' w='82400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2564,8 +2564,8 @@ The average balance is the highest in Q3 and the lowest in Q4.</run>
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='28' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='27' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='30' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='29' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone fixed-size='280' h='79750' id='3' is-fixed='true' name='6' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2667,8 +2667,8 @@ The average balance is the highest in Q3 and the lowest in Q4.</run>
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='17' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='19' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone fixed-size='280' h='80875' id='3' is-fixed='true' name='6.11' w='82000' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2820,11 +2820,14 @@ The average balance is the highest in Q3 and the lowest in Q4.</run>
       </zones>
       <devicelayouts>
         <devicelayout auto-generated='true' name='Phone'>
-          <size maxheight='1150' minheight='1150' sizing-mode='vscroll' />
+          <size maxheight='1500' minheight='1500' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='33' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='32' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
-                <zone fixed-size='250' h='32250' id='3' is-fixed='true' name='7.1' w='41200' x='800' y='1000'>
+            <zone h='100000' id='39' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='38' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone forceUpdate='true' h='19000' id='36' type-v2='text' w='41200' x='800' y='1000'>
+                  <formatted-text>
+                    <run fontsize='24'>Actual numbers</run>
+                  </formatted-text>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2833,7 +2836,10 @@ The average balance is the highest in Q3 and the lowest in Q4.</run>
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='250' h='32250' id='7' is-fixed='true' name='7.11' w='41200' x='42000' y='1000'>
+                <zone forceUpdate='true' h='19000' id='37' type-v2='text' w='57200' x='42000' y='1000'>
+                  <formatted-text>
+                    <run fontsize='24'>Proportion</run>
+                  </formatted-text>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2842,7 +2848,7 @@ The average balance is the highest in Q3 and the lowest in Q4.</run>
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='10125' id='11' name='7.11' pane-specification-id='0' param='[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Offer Accepted:qk]' type-v2='color' w='16000' x='83200' y='1000'>
+                <zone fixed-size='200' h='25998' id='3' is-fixed='true' name='7.1' w='41200' x='800' y='20000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2851,7 +2857,7 @@ The average balance is the highest in Q3 and the lowest in Q4.</run>
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='36375' id='5' is-fixed='true' name='7.2' w='82400' x='800' y='33250'>
+                <zone fixed-size='200' h='25998' id='7' is-fixed='true' name='7.11' w='41200' x='42000' y='20000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2860,7 +2866,43 @@ The average balance is the highest in Q3 and the lowest in Q4.</run>
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='227' h='29375' id='6' is-fixed='true' name='7.3' w='82400' x='800' y='69625'>
+                <zone h='10125' id='11' name='7.11' pane-specification-id='0' param='[federated.0td3coj1ralyfw14bli0v0wkrks8].[cnt:Offer Accepted:qk]' type-v2='color' w='16000' x='83200' y='20000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='227' h='29323' id='5' is-fixed='true' name='7.2' w='41200' x='800' y='45998'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='227' h='29323' id='34' is-fixed='true' name='7.22' w='41200' x='42000' y='45998'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='181' h='23679' id='6' is-fixed='true' name='7.3' w='41200' x='800' y='75321'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='181' h='23679' id='35' is-fixed='true' name='7.33' w='41200' x='42000' y='75321'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2940,9 +2982,9 @@ The average balance is the highest in Q3 and the lowest in Q4.</run>
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='32' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='31' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
-                <zone fixed-size='280' h='81875' id='3' is-fixed='true' name='8' w='82400' x='800' y='1000'>
+            <zone h='100000' id='35' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='34' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='8' w='82400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2952,6 +2994,26 @@ The average balance is the highest in Q3 and the lowest in Q4.</run>
                   </zone-style>
                 </zone>
                 <zone h='10500' id='8' name='8' pane-specification-id='0' param='[federated.0td3coj1ralyfw14bli0v0wkrks8].[none:Offer Accepted:nk]' type-v2='color' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='329' forceUpdate='true' h='42125' id='33' type-v2='text' w='16000' x='83200' y='11500'>
+                  <formatted-text>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true'>Category A: </run>
+                    <run>&#10;0 - 700 EUR&#10;&#10;</run>
+                    <run bold='true'>Category B: </run>
+                    <run>&#10;701 - 1400 EUR&#10;&#10;</run>
+                    <run bold='true'>Category C: </run>
+                    <run>&#10;1401 - 1900 EUR&#10;&#10;</run>
+                    <run bold='true'>Category D:</run>
+                    <run> &#10;1901 - 3366 EUR</run>
+                  </formatted-text>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2974,7 +3036,7 @@ The average balance is the highest in Q3 and the lowest in Q4.</run>
       <simple-id uuid='{9C7498AF-3C5B-4069-AD56-BBFE8A2F8D8E}' />
     </dashboard>
   </dashboards>
-  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+  <windows source-height='44'>
     <window class='dashboard' maximized='true' name='Story 1'>
       <viewpoints />
       <active id='-1' />
